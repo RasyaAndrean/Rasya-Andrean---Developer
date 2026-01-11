@@ -55,6 +55,9 @@ class PortfolioApp {
     } catch (error) {
       console.error('Failed to initialize portfolio app:', error);
     }
+    
+    // Remove preload class to enable transitions
+    document.body.classList.remove('preload');
   }
 
   async loadData() {

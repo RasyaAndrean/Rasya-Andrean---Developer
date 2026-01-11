@@ -7,7 +7,7 @@
     "test": "vitest --run",
     "test:watch": "vitest",
     "dev": "python -m http.server 8000",
-    "build": "echo 'Static site - no build needed'"
+    "build": "node build-script.js"
   },
   "devDependencies": {
     "vitest": "^1.0.0",
