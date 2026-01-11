@@ -1,0 +1,290 @@
+/* CSS Custom Properties for Theme Management */
+
+:root {
+  /* Dark Theme (Default) */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #0f0f0f;
+  --bg-tertiary: #1a1a1a;
+  --text-primary: #e5e5e5;
+  --text-secondary: #b0b0b0;
+  --text-muted: #888;
+  --accent-color: #ffffff;
+  --secondary-color: #3b82f6;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color-hover: rgba(255, 255, 255, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --overlay-color: rgba(0, 0, 0, 0.8);
+  
+  /* Interactive Elements */
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --button-bg-hover: #e5e5e5;
+  --button-secondary-bg: rgba(255, 255, 255, 0.05);
+  --button-secondary-text: #e5e5e5;
+  --button-secondary-bg-hover: rgba(255, 255, 255, 0.08);
+  
+  /* Form Elements */
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --input-border-focus: rgba(255, 255, 255, 0.3);
+  --input-text: #e5e5e5;
+  --input-placeholder: #888;
+  
+  /* Status Colors */
+  --success-color: #10b981;
+  --error-color: #ef4444;
+  --warning-color: #f59e0b;
+  --info-color: #3b82f6;
+  
+  /* Component Specific */
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --card-hover-bg: rgba(255, 255, 255, 0.08);
+  --tag-bg: rgba(255, 255, 255, 0.1);
+  --tag-text: #e5e5e5;
+  
+  /* Animation Properties */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6c757d;
+  --text-muted: #adb5bd;
+  --accent-color: #000000;
+  --secondary-color: #3b82f6;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --border-color-hover: rgba(0, 0, 0, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --overlay-color: rgba(255, 255, 255, 0.9);
+  
+  /* Interactive Elements */
+  --button-bg: #000000;
+  --button-text: #ffffff;
+  --button-bg-hover: #333333;
+  --button-secondary-bg: rgba(0, 0, 0, 0.05);
+  --button-secondary-text: #1a1a1a;
+  --button-secondary-bg-hover: rgba(0, 0, 0, 0.08);
+  
+  /* Form Elements */
+  --input-bg: rgba(0, 0, 0, 0.05);
+  --input-border: rgba(0, 0, 0, 0.1);
+  --input-border-focus: rgba(0, 0, 0, 0.3);
+  --input-text: #1a1a1a;
+  --input-placeholder: #6c757d;
+  
+  /* Component Specific */
+  --card-bg: rgba(0, 0, 0, 0.02);
+  --card-border: rgba(0, 0, 0, 0.1);
+  --card-hover-bg: rgba(0, 0, 0, 0.05);
+  --tag-bg: rgba(0, 0, 0, 0.1);
+  --tag-text: #1a1a1a;
+}
+
+/* Theme Transition Animation */
+* {
+  transition: background-color var(--transition-normal), 
+              color var(--transition-normal), 
+              border-color var(--transition-normal),
+              box-shadow var(--transition-normal),
+              fill var(--transition-normal),
+              stroke var(--transition-normal);
+}
+
+/* Enhanced theme transition for smooth switching */
+.theme-transitioning * {
+  transition: background-color var(--transition-fast), 
+              color var(--transition-fast), 
+              border-color var(--transition-fast),
+              box-shadow var(--transition-fast),
+              fill var(--transition-fast),
+              stroke var(--transition-fast) !important;
+}
+
+/* Prevent transition on page load */
+.preload * {
+  transition: none !important;
+}
+
+/* Ensure all new sections use theme variables */
+.projects {
+  background: var(--bg-primary);
+}
+
+.blog {
+  background: var(--bg-secondary);
+}
+
+.skills-timeline-section {
+  background: var(--bg-primary);
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+  background: var(--button-secondary-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle:hover {
+  background: var(--button-secondary-bg-hover);
+  border-color: var(--border-color-hover);
+  transform: translateY(-1px);
+}
+
+.theme-toggle:active {
+  transform: translateY(0);
+}
+
+/* Theme toggle button states */
+.theme-toggle--dark {
+  /* Additional styles for dark theme state */
+}
+
+.theme-toggle--light {
+  /* Additional styles for light theme state */
+}
+
+/* Enhanced theme transition animation */
+.theme-toggle:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.theme-toggle:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Update existing styles to use custom properties */
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+header {
+  background: rgba(var(--bg-primary-rgb, 10, 10, 10), 0.8);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.hero-content h1 {
+  color: var(--accent-color);
+}
+
+.hero-content .subtitle {
+  color: var(--text-muted);
+}
+
+.hero-content .description {
+  color: var(--text-secondary);
+}
+
+.cta-button {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+.cta-button:hover {
+  background: var(--button-bg-hover);
+}
+
+.about {
+  background: var(--bg-secondary);
+}
+
+.section-title {
+  color: var(--accent-color);
+}
+
+.about-text {
+  color: var(--text-secondary);
+}
+
+.skill-item {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--card-border);
+}
+
+.skill-item:hover {
+  background: var(--card-hover-bg);
+  border-color: var(--border-color-hover);
+}
+
+.contact {
+  background: var(--bg-primary);
+}
+
+.contact-info h3,
+.contact-form h3 {
+  color: var(--accent-color);
+}
+
+.contact-item {
+  color: var(--text-secondary);
+}
+
+.contact-item .icon {
+  color: var(--accent-color);
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--input-text);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--input-border-focus);
+}
+
+.submit-btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+.submit-btn:hover {
+  background: var(--button-bg-hover);
+}
+
+footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+}

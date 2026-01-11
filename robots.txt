@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rasyaandrean.dev/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow common non-content directories
+Disallow: /node_modules/
+Disallow: /test/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.kiro/

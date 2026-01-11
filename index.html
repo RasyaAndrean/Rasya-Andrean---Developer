@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Rasya Andrean - Full Stack Developer | Web Development Portfolio</title>
+    <meta name="title" content="Rasya Andrean - Full Stack Developer | Web Development Portfolio">
+    <meta name="description" content="Full Stack Developer specializing in JavaScript, React, Node.js, and modern web technologies. View my portfolio of web applications and technical articles.">
+    <meta name="keywords" content="Full Stack Developer, JavaScript, React, Node.js, Web Development, Portfolio, Rasya Andrean, Frontend, Backend, API Development">
+    <meta name="author" content="Rasya Andrean">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rasyaandrean.dev">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rasyaandrean.dev">
+    <meta property="og:title" content="Rasya Andrean - Full Stack Developer | Web Development Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in JavaScript, React, Node.js, and modern web technologies. View my portfolio of web applications and technical articles.">
+    <meta property="og:image" content="https://rasyaandrean.dev/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Rasya Andrean Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rasyaandrean.dev">
+    <meta property="twitter:title" content="Rasya Andrean - Full Stack Developer | Web Development Portfolio">
+    <meta property="twitter:description" content="Full Stack Developer specializing in JavaScript, React, Node.js, and modern web technologies. View my portfolio of web applications and technical articles.">
+    <meta property="twitter:image" content="https://rasyaandrean.dev/images/og-image.jpg">
+    <meta property="twitter:creator" content="@rasyaandrean">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rasya Andrean",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer specializing in JavaScript, React, Node.js, and modern web technologies",
+        "url": "https://rasyaandrean.dev",
+        "image": "https://rasyaandrean.dev/images/profile.jpg",
+        "email": "rasyaandrean@outlook.co.id",
+        "telephone": "+62 831 1749 3788",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dumai",
+            "addressRegion": "Riau",
+            "addressCountry": "Indonesia"
+        },
+        "sameAs": [
+            "https://linkedin.com/in/rasya-andrean-0a4731373/",
+            "https://github.com/rasyaandrean"
+        ],
+        "knowsAbout": [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Python",
+            "PHP",
+            "MySQL",
+            "MongoDB",
+            "Git",
+            "Docker",
+            "AWS",
+            "Vue.js",
+            "TypeScript",
+            "Web Development",
+            "Full Stack Development",
+            "API Development"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Educational Institution"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance Developer"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.3rem;
+            color: #888;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-content .description {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ffffff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #e5e5e5;
+            transform: translateY(-1px);
+        }
+
+        /* About Section */
+        .about {
+            padding: 120px 0;
+            background: #0f0f0f;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            color: #e5e5e5;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+            background: #0a0a0a;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: #b0b0b0;
+        }
+
+        .contact-item .icon {
+            width: 20px;
+            height: 20px;
+            color: #ffffff;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-form h3 {
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            color: #e5e5e5;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #ffffff;
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .submit-btn:hover {
+            background: #e5e5e5;
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            background: #0f0f0f;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+        }
+
+        /* New Sections - removed inline styles, now using CSS custom properties */
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .theme-toggle {
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Smooth animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Contact links styling */
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Lazy loading styles */
+        .lazy-placeholder {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            filter: blur(1px);
+            transition: filter 0.3s ease, opacity 0.3s ease;
+        }
+
+        .lazy-loaded {
+            filter: none;
+            opacity: 1;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lazy-error {
+            filter: none;
+            opacity: 0.7;
+        }
+
+        @keyframes loading {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Dark theme lazy loading styles */
+        [data-theme="dark"] .lazy-placeholder {
+            background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+            background-size: 200% 100%;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav class="container" role="navigation" aria-label="Main navigation">
+            <div class="logo">Rasya Andrean</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#blog" role="menuitem">Blog</a></li>
+                <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle between dark and light theme" type="button">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Hello, I'm Rasya</h1>
+                    <p class="subtitle">Full Stack Developer</p>
+                    <p class="description">
+                        I create clean, efficient, and scalable web applications
+                        with modern technologies. Passionate about writing quality code
+                        and solving complex problems.
+                    </p>
+                    <a href="#contact" class="cta-button" aria-describedby="hero-heading">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title fade-in">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <p>
+                            I'm a passionate developer who loves building digital experiences
+                            that make a difference. With a focus on clean code and user-centered
+                            design, I enjoy tackling challenges and learning new technologies.
+                        </p>
+                        <p>
+                            My approach combines technical expertise with creative problem-solving
+                            to deliver solutions that not only work well but also provide
+                            exceptional user experiences.
+                        </p>
+                        <p>
+                            When I'm not coding, I'm exploring new frameworks, contributing to
+                            open-source projects, or sharing knowledge with the developer community.
+                        </p>
+                    </div>
+                    <div class="skills fade-in" role="list" aria-label="Technical skills">
+                        <div class="skill-item" role="listitem">JavaScript</div>
+                        <div class="skill-item" role="listitem">React</div>
+                        <div class="skill-item" role="listitem">Node.js</div>
+                        <div class="skill-item" role="listitem">Python</div>
+                        <div class="skill-item" role="listitem">PHP</div>
+                        <div class="skill-item" role="listitem">MySQL</div>
+                        <div class="skill-item" role="listitem">MongoDB</div>
+                        <div class="skill-item" role="listitem">Git</div>
+                        <div class="skill-item" role="listitem">Docker</div>
+                        <div class="skill-item" role="listitem">AWS</div>
+                        <div class="skill-item" role="listitem">Vue.js</div>
+                        <div class="skill-item" role="listitem">TypeScript</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title fade-in">Projects</h2>
+                <!-- Project gallery will be initialized here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="blog" class="blog" aria-labelledby="blog-heading">
+            <div class="container">
+                <h2 id="blog-heading" class="section-title fade-in">Blog & Articles</h2>
+                <!-- Blog system will be initialized here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="skills" class="skills-timeline-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title fade-in">Skills & Experience</h2>
+                <div class="skills-timeline">
+                    <!-- Skills timeline will be initialized here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title fade-in">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info fade-in">
+                        <h3>Let's Connect</h3>
+                        <address>
+                            <div class="contact-item">
+                                <span class="icon" aria-hidden="true">📧</span>
+                                <a href="mailto:rasyaandrean@outlook.co.id">rasyaandrean@outlook.co.id</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="icon" aria-hidden="true">📱</span>
+                                <a href="tel:+6283117493788">+62 831 1749 3788</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="icon" aria-hidden="true">📍</span>
+                                <span>Dumai, Riau, Indonesia</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="icon" aria-hidden="true">💼</span>
+                                <a href="https://linkedin.com/in/rasya-andrean-0a4731373/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                            </div>
+                        </address>
+                    </div>
+                    <form class="contact-form fade-in" id="contact-form" aria-labelledby="contact-form-heading">
+                        <h3 id="contact-form-heading">Send Message</h3>
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="sr-only">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Rasya Andrean. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

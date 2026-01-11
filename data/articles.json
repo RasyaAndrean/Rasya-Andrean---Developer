@@ -1,0 +1,78 @@
+{
+  "articles": [
+    {
+      "id": "building-scalable-react-apps",
+      "title": "Building Scalable React Applications",
+      "slug": "building-scalable-react-applications",
+      "excerpt": "Learn best practices for structuring large React applications with proper component architecture, state management, and performance optimization techniques.",
+      "content": "# Building Scalable React Applications\n\nWhen building large React applications, proper architecture becomes crucial for maintainability and performance.\n\n## Component Architecture\n\nStart with a clear component hierarchy and follow the single responsibility principle. Each component should have one clear purpose.\n\n## State Management\n\nFor complex applications, consider using Redux or Zustand for global state management. Keep local state when possible.\n\n## Performance Optimization\n\nUse React.memo, useMemo, and useCallback to prevent unnecessary re-renders. Implement code splitting with React.lazy for better loading times.",
+      "category": "tutorials",
+      "tags": ["React", "JavaScript", "Architecture", "Performance"],
+      "publishedDate": "2024-12-01",
+      "readingTime": 8,
+      "featured": true
+    },
+    {
+      "id": "modern-css-techniques",
+      "title": "Modern CSS Techniques for Better UX",
+      "slug": "modern-css-techniques",
+      "excerpt": "Explore advanced CSS features like Grid, Flexbox, Custom Properties, and Container Queries to create responsive and maintainable stylesheets.",
+      "content": "# Modern CSS Techniques for Better UX\n\nCSS has evolved significantly, offering powerful tools for creating better user experiences.\n\n## CSS Grid and Flexbox\n\nCombine Grid for layout and Flexbox for component alignment. Grid excels at two-dimensional layouts while Flexbox handles one-dimensional arrangements.\n\n## Custom Properties (CSS Variables)\n\nUse custom properties for theming and maintaining consistent design systems. They're perfect for dark/light mode implementations.\n\n## Container Queries\n\nContainer queries allow components to respond to their container size rather than viewport size, enabling truly modular responsive design.",
+      "category": "tutorials",
+      "tags": ["CSS", "Responsive Design", "UX", "Frontend"],
+      "publishedDate": "2024-11-20",
+      "readingTime": 6,
+      "featured": true
+    },
+    {
+      "id": "api-design-principles",
+      "title": "RESTful API Design Principles",
+      "slug": "api-design-principles",
+      "excerpt": "Essential principles for designing clean, maintainable, and scalable REST APIs that developers love to use.",
+      "content": "# RESTful API Design Principles\n\nGood API design is crucial for developer experience and long-term maintainability.\n\n## Resource-Based URLs\n\nUse nouns for resources and HTTP methods for actions. `/users/123` is better than `/getUser?id=123`.\n\n## Consistent Response Format\n\nMaintain consistent response structures across all endpoints. Include metadata like pagination info and error details.\n\n## Proper HTTP Status Codes\n\nUse appropriate status codes: 200 for success, 201 for creation, 400 for client errors, 500 for server errors.\n\n## Versioning Strategy\n\nImplement API versioning from the start. Use URL versioning (`/v1/users`) or header-based versioning.",
+      "category": "insights",
+      "tags": ["API", "REST", "Backend", "Design"],
+      "publishedDate": "2024-11-10",
+      "readingTime": 7,
+      "featured": false
+    },
+    {
+      "id": "ecommerce-project-breakdown",
+      "title": "E-commerce Platform: Project Breakdown",
+      "slug": "ecommerce-project-breakdown",
+      "excerpt": "A detailed breakdown of building a full-stack e-commerce platform, covering architecture decisions, challenges faced, and lessons learned.",
+      "content": "# E-commerce Platform: Project Breakdown\n\nBuilding an e-commerce platform involves many moving parts. Here's how I approached this complex project.\n\n## Architecture Overview\n\nI chose a microservices architecture with separate services for user management, product catalog, orders, and payments.\n\n## Technology Stack\n\n- Frontend: React with TypeScript\n- Backend: Node.js with Express\n- Database: MongoDB for flexibility\n- Payment: Stripe integration\n- Authentication: JWT tokens\n\n## Key Challenges\n\n### Payment Integration\n\nIntegrating Stripe required careful handling of webhooks and ensuring PCI compliance.\n\n### Inventory Management\n\nImplemented optimistic locking to handle concurrent inventory updates.\n\n## Lessons Learned\n\nStart with a monolith and extract services as needed. Premature optimization can lead to unnecessary complexity.",
+      "category": "project-breakdowns",
+      "tags": ["E-commerce", "Full-stack", "React", "Node.js", "MongoDB"],
+      "publishedDate": "2024-12-05",
+      "readingTime": 10,
+      "featured": true
+    },
+    {
+      "id": "javascript-performance-tips",
+      "title": "JavaScript Performance Optimization Tips",
+      "slug": "javascript-performance-tips",
+      "excerpt": "Practical tips for optimizing JavaScript performance, from memory management to efficient algorithms and DOM manipulation.",
+      "content": "# JavaScript Performance Optimization Tips\n\nPerformance optimization is crucial for user experience. Here are practical tips for faster JavaScript.\n\n## Memory Management\n\nAvoid memory leaks by properly cleaning up event listeners and clearing references to DOM elements.\n\n## Efficient DOM Manipulation\n\nBatch DOM updates and use DocumentFragment for multiple insertions. Avoid layout thrashing by reading and writing DOM properties separately.\n\n## Algorithm Optimization\n\nChoose appropriate data structures. Use Map for key-value pairs and Set for unique values instead of arrays when appropriate.\n\n## Async Operations\n\nUse Promise.all() for parallel operations and implement proper error handling to prevent blocking.",
+      "category": "tutorials",
+      "tags": ["JavaScript", "Performance", "Optimization", "DOM"],
+      "publishedDate": "2024-10-25",
+      "readingTime": 5,
+      "featured": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "tutorials",
+      "name": "Tutorials"
+    },
+    {
+      "id": "insights",
+      "name": "Insights"
+    },
+    {
+      "id": "project-breakdowns",
+      "name": "Project Breakdowns"
+    }
+  ]
+}

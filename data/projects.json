@@ -1,0 +1,81 @@
+{
+  "projects": [
+    {
+      "id": "ecommerce-platform",
+      "title": "E-commerce Platform",
+      "description": "Full-stack e-commerce solution with React and Node.js, featuring user authentication, product catalog, shopping cart, and payment integration.",
+      "category": "web-development",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Express", "JWT"],
+      "thumbnail": "/images/projects/placeholder.svg",
+      "images": ["/images/projects/placeholder.svg"],
+      "liveUrl": "https://example-ecommerce.com",
+      "githubUrl": "https://github.com/rasya/ecommerce-platform",
+      "featured": true,
+      "completedDate": "2024-12-01"
+    },
+    {
+      "id": "task-management-app",
+      "title": "Task Management App",
+      "description": "A collaborative task management application built with Vue.js and Firebase, allowing teams to organize projects and track progress.",
+      "category": "web-development",
+      "technologies": ["Vue.js", "Firebase", "Vuex", "CSS3", "JavaScript"],
+      "thumbnail": "/images/projects/placeholder.svg",
+      "images": ["/images/projects/placeholder.svg"],
+      "liveUrl": "https://example-taskapp.com",
+      "githubUrl": "https://github.com/rasya/task-management",
+      "featured": true,
+      "completedDate": "2024-11-15"
+    },
+    {
+      "id": "weather-mobile-app",
+      "title": "Weather Mobile App",
+      "description": "Cross-platform mobile weather application built with React Native, featuring location-based forecasts and weather alerts.",
+      "category": "mobile-apps",
+      "technologies": ["React Native", "TypeScript", "Redux", "OpenWeather API"],
+      "thumbnail": "/images/projects/placeholder.svg",
+      "images": ["/images/projects/placeholder.svg"],
+      "githubUrl": "https://github.com/rasya/weather-app",
+      "featured": false,
+      "completedDate": "2024-10-20"
+    },
+    {
+      "id": "rest-api-service",
+      "title": "RESTful API Service",
+      "description": "Scalable REST API built with Python Flask, featuring authentication, rate limiting, and comprehensive documentation.",
+      "category": "apis",
+      "technologies": ["Python", "Flask", "PostgreSQL", "Docker", "Swagger"],
+      "thumbnail": "/images/projects/placeholder.svg",
+      "images": ["/images/projects/placeholder.svg"],
+      "githubUrl": "https://github.com/rasya/rest-api-service",
+      "featured": false,
+      "completedDate": "2024-09-30"
+    },
+    {
+      "id": "portfolio-website",
+      "title": "Portfolio Website",
+      "description": "Personal portfolio website showcasing projects and skills, built with modern web technologies and optimized for performance.",
+      "category": "web-development",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      "thumbnail": "/images/projects/placeholder.svg",
+      "images": ["/images/projects/placeholder.svg"],
+      "liveUrl": "https://rasyaandrean.dev",
+      "githubUrl": "https://github.com/rasya/portfolio",
+      "featured": false,
+      "completedDate": "2024-12-15"
+    }
+  ],
+  "categories": [
+    {
+      "id": "web-development",
+      "name": "Web Development"
+    },
+    {
+      "id": "mobile-apps",
+      "name": "Mobile Apps"
+    },
+    {
+      "id": "apis",
+      "name": "APIs & Backend"
+    }
+  ]
+}

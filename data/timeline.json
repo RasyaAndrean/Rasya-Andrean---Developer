@@ -1,0 +1,218 @@
+{
+  "experiences": [
+    {
+      "id": "exp-1",
+      "type": "work",
+      "title": "Senior Full Stack Developer",
+      "company": "Tech Solutions Inc.",
+      "location": "Jakarta, Indonesia",
+      "startDate": "2023-01-01",
+      "endDate": null,
+      "current": true,
+      "description": "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting microservices solutions.",
+      "achievements": [
+        "Improved application performance by 40% through optimization",
+        "Led a team of 5 developers on multiple projects",
+        "Implemented CI/CD pipelines reducing deployment time by 60%"
+      ],
+      "technologies": ["React", "Node.js", "AWS", "Docker", "MongoDB"]
+    },
+    {
+      "id": "exp-2",
+      "type": "work",
+      "title": "Full Stack Developer",
+      "company": "Digital Agency Co.",
+      "location": "Pekanbaru, Riau",
+      "startDate": "2021-06-01",
+      "endDate": "2022-12-31",
+      "current": false,
+      "description": "Developed and maintained multiple client websites and web applications. Collaborated with design teams to implement responsive user interfaces.",
+      "achievements": [
+        "Delivered 15+ client projects on time and within budget",
+        "Reduced bug reports by 50% through comprehensive testing",
+        "Implemented modern development workflows"
+      ],
+      "technologies": ["Vue.js", "PHP", "MySQL", "Laravel", "JavaScript"]
+    },
+    {
+      "id": "exp-3",
+      "type": "education",
+      "title": "Bachelor of Computer Science",
+      "company": "University of Riau",
+      "location": "Pekanbaru, Riau",
+      "startDate": "2017-09-01",
+      "endDate": "2021-07-01",
+      "current": false,
+      "description": "Focused on software engineering, algorithms, and data structures. Graduated with honors and completed several software development projects.",
+      "achievements": [
+        "Graduated Magna Cum Laude (GPA: 3.8/4.0)",
+        "Led university programming competition team",
+        "Published research on web application security"
+      ],
+      "technologies": ["Java", "Python", "C++", "Database Design", "Software Engineering"]
+    },
+    {
+      "id": "exp-4",
+      "type": "work",
+      "title": "Junior Web Developer",
+      "company": "Local Web Studio",
+      "location": "Dumai, Riau",
+      "startDate": "2020-01-01",
+      "endDate": "2021-05-31",
+      "current": false,
+      "description": "Part-time position during university studies. Developed small business websites and learned modern web development practices.",
+      "achievements": [
+        "Built 10+ responsive websites for local businesses",
+        "Learned modern JavaScript frameworks",
+        "Gained experience with client communication"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "PHP"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "frontend",
+      "category": "Frontend Development",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "proficiency": 95,
+          "level": "Expert",
+          "yearsOfExperience": 5
+        },
+        {
+          "name": "React",
+          "proficiency": 90,
+          "level": "Expert",
+          "yearsOfExperience": 4
+        },
+        {
+          "name": "Vue.js",
+          "proficiency": 85,
+          "level": "Advanced",
+          "yearsOfExperience": 3
+        },
+        {
+          "name": "TypeScript",
+          "proficiency": 80,
+          "level": "Advanced",
+          "yearsOfExperience": 2
+        },
+        {
+          "name": "HTML/CSS",
+          "proficiency": 95,
+          "level": "Expert",
+          "yearsOfExperience": 6
+        },
+        {
+          "name": "Sass/SCSS",
+          "proficiency": 85,
+          "level": "Advanced",
+          "yearsOfExperience": 4
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "category": "Backend Development",
+      "skills": [
+        {
+          "name": "Node.js",
+          "proficiency": 90,
+          "level": "Expert",
+          "yearsOfExperience": 4
+        },
+        {
+          "name": "Python",
+          "proficiency": 80,
+          "level": "Advanced",
+          "yearsOfExperience": 3
+        },
+        {
+          "name": "PHP",
+          "proficiency": 85,
+          "level": "Advanced",
+          "yearsOfExperience": 4
+        },
+        {
+          "name": "Express.js",
+          "proficiency": 88,
+          "level": "Advanced",
+          "yearsOfExperience": 4
+        },
+        {
+          "name": "Laravel",
+          "proficiency": 75,
+          "level": "Intermediate",
+          "yearsOfExperience": 2
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "category": "Database & Storage",
+      "skills": [
+        {
+          "name": "MongoDB",
+          "proficiency": 85,
+          "level": "Advanced",
+          "yearsOfExperience": 3
+        },
+        {
+          "name": "MySQL",
+          "proficiency": 90,
+          "level": "Expert",
+          "yearsOfExperience": 5
+        },
+        {
+          "name": "PostgreSQL",
+          "proficiency": 75,
+          "level": "Intermediate",
+          "yearsOfExperience": 2
+        },
+        {
+          "name": "Redis",
+          "proficiency": 70,
+          "level": "Intermediate",
+          "yearsOfExperience": 2
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "category": "Tools & DevOps",
+      "skills": [
+        {
+          "name": "Git",
+          "proficiency": 95,
+          "level": "Expert",
+          "yearsOfExperience": 5
+        },
+        {
+          "name": "Docker",
+          "proficiency": 80,
+          "level": "Advanced",
+          "yearsOfExperience": 3
+        },
+        {
+          "name": "AWS",
+          "proficiency": 75,
+          "level": "Intermediate",
+          "yearsOfExperience": 2
+        },
+        {
+          "name": "Linux",
+          "proficiency": 85,
+          "level": "Advanced",
+          "yearsOfExperience": 4
+        },
+        {
+          "name": "Webpack",
+          "proficiency": 70,
+          "level": "Intermediate",
+          "yearsOfExperience": 3
+        }
+      ]
+    }
+  ]
+}
