@@ -13,6 +13,7 @@ const itemsToCopy = [
   'js',
   'data',
   'images',
+  'css',
   'favicon.ico',
   'apple-touch-icon.png',
   'favicon-32x32.png',
@@ -24,7 +25,9 @@ const itemsToCopy = [
   'README.md',
   '.htaccess',
   'security.txt',
-  'sw.js'
+  'sw.js',
+  'js/components/PerformanceMonitor.js',
+  'js/components/ErrorHandler.js'
 ];
 
 let copiedCount = 0;

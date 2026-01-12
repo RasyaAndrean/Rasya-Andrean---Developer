@@ -7,6 +7,8 @@ import { NavigationManager } from './components/NavigationManager.js';
 import { SkillsTimeline } from './components/SkillsTimeline.js';
 import { AnimationEngine } from './components/AnimationEngine.js';
 import { LazyImageLoader } from './components/LazyImageLoader.js';
+import './components/PerformanceMonitor.js';
+import './components/ErrorHandler.js';
 
 class PortfolioApp {
   constructor() {
