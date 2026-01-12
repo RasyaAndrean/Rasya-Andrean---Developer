@@ -4,12 +4,27 @@ Allow: /
 # Sitemap
 Sitemap: https://rasyaandrean.dev/sitemap.xml
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
+# Host directive
+Host: https://rasyaandrean.dev
 
-# Disallow common non-content directories
-Disallow: /node_modules/
-Disallow: /test/
-Disallow: /.git/
-Disallow: /.vscode/
-Disallow: /.kiro/
+# Crawling delay (in seconds)
+Crawl-delay: 5
+
+# Disallow private and admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /wp-admin/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /search?
+Disallow: /*?
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+Allow: /assets/

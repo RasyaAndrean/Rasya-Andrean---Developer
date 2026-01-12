@@ -1,0 +1,11 @@
+# Our security address
+Contact: mailto:rasyaandrean@outlook.co.id
+
+# Our security policy
+Policy: https://rasyaandrean.dev/security-policy
+
+# Preferred languages
+Preferred-Languages: en, id
+
+# Hiring
+Hiring: https://rasyaandrean.dev/careers

@@ -21,7 +21,10 @@ const itemsToCopy = [
   'robots.txt',
   'sitemap.xml',
   'LICENSE',
-  'README.md'
+  'README.md',
+  '.htaccess',
+  'security.txt',
+  'sw.js'
 ];
 
 let copiedCount = 0;
